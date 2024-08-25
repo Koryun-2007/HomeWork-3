@@ -1,18 +1,10 @@
-function isPalindrome(str) {
-    let cleanedStr = '';
-
-    for (let char of str) {
-        if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z') || (char >= '0' && char <= '9')) {
-            cleanedStr += char.toLowerCase();
-        }
+function isPalindrome(str){
+    str = str.toLowerCase();
+    const reverseStr = str.split("").reverse().join("");
+    if(str === reverseStr){
+        return true
+    } else{
+        return false
     }
-
-    let reversedStr = '';
-    for (let i = cleanedStr.length - 1; i >= 0; i--) {
-        reversedStr += cleanedStr[i];
-    }
-
-    return cleanedStr === reversedStr;
 }
-
-console.log(isPalindrome("A man, a plan, a canal, Panama"));
+console.log(isPalindrome("A man, a plan, a canal, Panama"))
