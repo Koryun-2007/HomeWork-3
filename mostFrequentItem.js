@@ -18,5 +18,5 @@ function mostFrequentItem(arr) {
     return mostFrequent;
 }
 
-console.log(mostFrequentItem([1, 2, 2, 3, 3, 3, 4, 4, 4, 4]));
+console.log(mostFrequentItem([1, 2, 2, 3, 3, 3, 4, 4, 4, 4,4]));
 
