@@ -3,7 +3,7 @@ function isPrime(num) {
         return false;
     }
 
-    for (let i = 2; i <= Math.sqrt(num); i++) {
+    for (let i = 2; i < num; i**2) {
         if (num % i === 0) {
             return false;
         }
@@ -12,4 +12,4 @@ function isPrime(num) {
     return true;
 }
 
-console.log(isPrime(7));  
+console.log(isPrime(2));  
