@@ -2,8 +2,10 @@ function isPrime(num) {
     if (num <= 1) {
         return false;
     }
-
-    for (let i = 2; i < num; i**2) {
+    if (num < 4 ){
+        return true
+    }
+    for (let i = 2; i * i <= num/2; i++) {
         if (num % i === 0) {
             return false;
         }
@@ -12,4 +14,4 @@ function isPrime(num) {
     return true;
 }
 
-console.log(isPrime(2));  
+console.log(isPrime(22));  
